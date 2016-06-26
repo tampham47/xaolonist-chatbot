@@ -327,7 +327,9 @@ function sendTextMessage(recipientId, messageText) {
   };
 
   callSendAPI(messageData);
-  callSendAPI(messageData2);
+  setTimeout(function() {
+    callSendAPI(messageData2);
+  }, 200);
 }
 
 /*

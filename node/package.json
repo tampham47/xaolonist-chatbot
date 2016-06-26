@@ -7,7 +7,7 @@
     "start": "node app.js",
     "lint": "jshint --exclude node_modules .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy_prod": "ssh -i _deploy/chamxanh.pem ubuntu@websaigon.co 'cd prod/xaolonist-chatbot && git pull && pm2 startOrRestart pm2-xaolonist.json --env development'"
+    "deploy_prod": "ssh -i _deploy/chamxanh.pem ubuntu@websaigon.co 'cd prod/xaolonist-chatbot && git pull && cd node && pm2 startOrRestart pm2-xaolonist.json --env development'"
   },
   "repository": {
     "type": "git",
