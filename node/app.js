@@ -322,7 +322,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: 'send `-h && --help` for more infomation.'
+      text: 'Mình là chatbot, mình ở đây để tiếp nhận thông tin khách hàng và hướng dẫn các bạn một số thông tin cơ bản. Bạn hãy nhắn tin theo các cú pháp bên dưới để có truy cập thông tin mình mong muốn.'
     }
   };
 
