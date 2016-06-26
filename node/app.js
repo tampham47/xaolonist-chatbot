@@ -313,23 +313,11 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: messageText
-    }
-  };
-
-  var messageData2 = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: 'Mình là chatbot, mình ở đây để tiếp nhận thông tin khách hàng và hướng dẫn các bạn một số thông tin cơ bản. Bạn hãy nhắn tin theo các cú pháp bên dưới để có truy cập thông tin mình mong muốn.'
+      text: messageText + ', mình là Chatbot trợ lý. Hãy nhắn tin theo cú pháp bên dưới để được hỗ trợ.'
     }
   };
 
   callSendAPI(messageData);
-  setTimeout(function() {
-    callSendAPI(messageData2);
-  }, 200);
 }
 
 /*
