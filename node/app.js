@@ -204,7 +204,8 @@ function receivedMessage(event) {
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
-    switch (messageText) {
+    var transferMess = messageText.toLowerCase();
+    switch (transferMess) {
       case 'image':
         sendImageMessage(senderID);
         break;
@@ -220,6 +221,9 @@ function receivedMessage(event) {
       case 'receipt':
         sendReceiptMessage(senderID);
         break;
+
+      case 'next':
+        sendQuestionMessage(senderID, messageText);
 
       default:
         sendTextMessage(senderID, messageText);
@@ -313,7 +317,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: messageText + ', mình là Chatbot trợ lý. Hãy nhắn tin theo cú pháp bên dưới để được hỗ trợ.'
+      text: 'Xin chào, mình là Xaolonist. Hãy nhắn `next` để bắt đầu trả lời các câu hỏi.'
     }
   };
 
@@ -343,6 +347,38 @@ function sendButtonMessage(recipientId) {
             type: "postback",
             title: "Call Postback",
             payload: "Developer defined postback"
+          }]
+        }
+      }
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send a question with 2 options of answer
+ *
+ */
+function sendQuestionMessage(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Bạn có tin vào chủ nghĩa cộng sản hay không?",
+          buttons:[{
+            type: "postback",
+            title: "Có"
+            payload: "Tôi tin",
+          }, {
+            type: "postback",
+            title: "Không",
+            payload: "Tôi đéo tin"
           }]
         }
       }

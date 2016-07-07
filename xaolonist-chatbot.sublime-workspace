@@ -519,6 +519,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "node/package.json",
+			"settings":
+			{
+				"buffer_size": 818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node/app.js",
+			"settings":
+			{
+				"buffer_size": 14431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node/pm2-xaolonist.json",
+			"settings":
+			{
+				"buffer_size": 467,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -757,9 +781,13 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/caphao/projects/xaolonist-chatbot",
+		"/Users/caphao/projects/xaolonist-chatbot/node"
 	],
 	"file_history":
 	[
+		"/Users/caphao/projects/xaolonist-chatbot/.gitignore",
+		"/Users/caphao/projects/xaolonist-chatbot/node/config/default.json",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/TransactionSearch.html",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/LocalPayment.html",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/shared/menu--beneficiaries.html",
@@ -885,9 +913,7 @@
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/shared/footer.html",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/release/public-jun09/portal/screen/AjaxScreen/action/GetJSONData__q__listdef__eq__uob__sl__listdef__sl__customer__sl__FT__sl__openTemplateRemittanceList.json",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/AjaxScreen/action/GetJSONData__q__listdef__eq__uob__sl__listdef__sl__customer__sl__FT__sl__openUnsignedLEPInitiationList.json",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/FundTransferScreen__q__mode__eq__UNSIGNED__an__tnxtype__eq__01.html",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/scripts/list-of-phrase-02.html",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/TransferToUOBAccount2.html"
+		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/FundTransferScreen__q__mode__eq__UNSIGNED__an__tnxtype__eq__01.html"
 	],
 	"find":
 	{
@@ -1033,6 +1059,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sendTextMessage",
+			"sendImageMessage",
+			"receivedMessage",
+			"sendImageMessage",
 			"dijit.form",
 			"BusinessDatesCalendar",
 			"Collaboration",
@@ -1156,11 +1186,7 @@
 			"\"ref_id\": \"",
 			"../../content",
 			"bussi",
-			"business",
-			"../../content",
-			"/2014",
-			"account_no",
-			"Status"
+			"business"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1193,8 +1219,101 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "node/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 547.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "node/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9551,
+								9551
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 5.0,
+						"translation.y": 799.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "node/pm2-xaolonist.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
