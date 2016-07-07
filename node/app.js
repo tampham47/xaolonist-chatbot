@@ -223,7 +223,8 @@ function receivedMessage(event) {
         break;
 
       case 'next':
-        sendQuestionMessage(senderID, messageText);
+        sendQuestionMessage(senderID);
+        break;
 
       default:
         sendTextMessage(senderID, messageText);
@@ -373,12 +374,12 @@ function sendQuestionMessage(recipientId) {
           text: "Bạn có tin vào chủ nghĩa cộng sản hay không?",
           buttons:[{
             type: "postback",
-            title: "Có"
+            title: "Có",
             payload: "Tôi tin",
           }, {
             type: "postback",
             title: "Không",
-            payload: "Tôi đéo tin"
+            payload: "Tôi đéo tin",
           }]
         }
       }
